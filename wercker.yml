@@ -10,7 +10,7 @@ build:
           echo "Image is $IMAGE_ID"
     - internal/docker-build:
        image-name: $IMAGE_BASE
-       dockerfile: Dockerfile1
+       dockerfile: Dockerfile
 
     - internal/docker-push:
            repository: $REPONAME
